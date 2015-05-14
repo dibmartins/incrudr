@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<title>Incrudr</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+	<!-- Bootstrap core CSS -->
+	<link href="lib/jquery/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+	<link rel="stylesheet" href="fonts/font-awesome-4/css/font-awesome.min.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="lib/jquery/jquery.gritter/css/jquery.gritter.css" />
+
+	<link rel="stylesheet" type="text/css" href="lib/jquery/jquery.nanoscroller/nanoscroller.css" />
+	<link rel="stylesheet" type="text/css" href="lib/jquery/jquery.easypiechart/jquery.easy-pie-chart.css" />
+	<link rel="stylesheet" type="text/css" href="lib/jquery/bootstrap.switch/bootstrap-switch.css" />
+	<link rel="stylesheet" type="text/css" href="lib/jquery/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css" />
+	<link rel="stylesheet" type="text/css" href="lib/jquery/jquery.select2/select2.css" />
+	<link rel="stylesheet" type="text/css" href="lib/jquery/bootstrap.slider/css/slider.css" />
+	<link rel="stylesheet" type="text/css" href="lib/jquery/intro.js/introjs.css" />
+	
+	<!-- Custom styles for this template -->
+	<link href="css/style.css" rel="stylesheet" />
+
+    </head>
+    <body style="display: none;">
+
+	<!-- Fixed navbar -->
+	<div id="head-nav" class="navbar navbar-default navbar-fixed-top">
+	    <div class="container-fluid">
+		<div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="fa fa-gear"></span>
+		    </button>
+		    <a class="navbar-brand" href="#"><span>Incrudr</span></a>
+		</div>
+		<div class="navbar-collapse collapse">
+		    <ul class="nav navbar-nav">
+			<li class="active"><a href="#">Dashboard</a></li>
+			<li><a href="#about">Sobre</a></li>
+			<li class="dropdown">
+			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ajuda<b class="caret"></b></a>
+			    <ul class="dropdown-menu">
+				<li><a href="#"><i class="fa fa-book"></i> Manual</a></li>
+				<li><a href="#"><i class="fa fa-question"></i> Helpdesk</a></li>
+				<li><a href="#"><i class="fa fa-comment-o"></i> Chat</a></li>
+				<li><a href="#"><i class="fa fa-phone"></i> Telefone</a></li>
+			    </ul>
+			</li>
+		    </ul>
+		    <ul class="nav navbar-nav navbar-right user-nav">
+			<li class="dropdown profile_menu">
+			    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img alt="Avatar" src="images/avatar2.jpg" /><span id="usermenu-user-name"></span> <b class="caret"></b></a>
+			    <ul class="dropdown-menu">
+				<li id="usermenu-my-profile"><a href="#">Meu Cadastro</a></li>
+				<li class="divider"></li>
+				<li id="usermenu-logout"><a href="#">Sair</a></li>
+			    </ul>
+			</li>
+		    </ul>			
+		    <ul class="nav navbar-nav navbar-right not-nav" >
+			<li class="button dropdown">
+			    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class=" fa fa-comments"></i></a>
+			    <ul class="dropdown-menu messages">
+				<li>
+				    <div class="nano nscroller">
+					<div class="content">
+					    <ul>
+						<li>
+						    <a href="#">
+							<img src="images/avatar2.jpg" alt="avatar" /><span class="date pull-right">13 Sept.</span> <span class="name">Daniel</span> I'm following you, and I want your money! 
+						    </a>
+						</li>
+						<li>
+						    <a href="#">
+							<img src="images/avatar_50.jpg" alt="avatar" /><span class="date pull-right">20 Oct.</span><span class="name">Adam</span> is now following you 
+						    </a>
+						</li>
+						<li>
+						    <a href="#">
+							<img src="images/avatar4_50.jpg" alt="avatar" /><span class="date pull-right">2 Nov.</span><span class="name">Michael</span> is now following you 
+						    </a>
+						</li>
+						<li>
+						    <a href="#">
+							<img src="images/avatar3_50.jpg" alt="avatar" /><span class="date pull-right">2 Nov.</span><span class="name">Lucy</span> is now following you 
+						    </a>
+						</li>
+					    </ul>
+					</div>
+				    </div>
+				    <ul class="foot"><li><a href="#">Todas as mensagens</a></li></ul>           
+				</li>
+			    </ul>
+			</li>
+			<li class="button dropdown">
+			    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span class="bubble">2</span></a>
+			    <ul class="dropdown-menu">
+				<li>
+				    <div class="nano nscroller">
+					<div class="content">
+					    <ul>
+						<li><a href="#"><i class="fa fa-cloud-upload info"></i><b>Daniel</b> is now following you <span class="date">2 minutes ago.</span></a></li>
+						<li><a href="#"><i class="fa fa-male success"></i> <b>Michael</b> is now following you <span class="date">15 minutes ago.</span></a></li>
+						<li><a href="#"><i class="fa fa-bug warning"></i> <b>Mia</b> commented on post <span class="date">30 minutes ago.</span></a></li>
+						<li><a href="#"><i class="fa fa-credit-card danger"></i> <b>Andrew</b> killed someone <span class="date">1 hour ago.</span></a></li>
+					    </ul>
+					</div>
+				    </div>
+				    <ul class="foot"><li><a href="#">View all activity </a></li></ul>           
+				</li>
+			    </ul>
+			</li>
+		    </ul>
+
+		</div>
+		<!--/.nav-collapse animate-collapse -->
+	    </div>
+	</div>
+
+	<div id="cl-wrapper" class="fixed-menu">
+	    <div class="cl-sidebar" data-position="right" data-step="1" data-intro="<strong>Fixed Sidebar</strong> <br/> It adjust to your needs." >
+		<div class="cl-toggle"><i class="fa fa-bars"></i></div>
+		<div class="cl-navblock">
+		    <div class="menu-space">
+			<div class="content">
+			    <div class="side-user">
+				<div class="avatar"><img src="images/avatar1_50.jpg" alt="Avatar" /></div>
+				<div class="info">
+				    <a href="#">Diego Botelho</a>
+				    <img src="images/state_online.png" alt="Status" /> <span>Online</span>
+				</div>
+			    </div>
+
+			    <ul class="cl-vnavigation">
+				<li><a href="#"><i class="fa fa-gear"></i><span>Configurações</span></a>
+				</li>
+			    </ul>  
+
+			    <ul class="cl-vnavigation">
+				<li><a href="#"><i class="fa fa-plus"></i><span>Cadastros</span></a>
+				    <ul class="sub-menu">
+					<li id="menu-perfis-usuarios"><a href="#"><i class="fa fa-users"></i> Perfis de Usuários</a></li>
+				    </ul>
+				    <ul class="sub-menu">
+					<li id="menu-usuarios"><a href="#"><i class="fa fa-user"></i> Usuários</a></li>
+				    </ul>
+				</li>
+			    </ul>  
+			</div>
+		    </div>
+		    <div class="text-right collapse-button" style="padding:7px 9px;">
+			<input type="text" class="form-control search" placeholder="Precisa de ajuda?" />
+			<button id="sidebar-collapse" class="btn btn-default" style=""><i style="color:#fff;" class="fa fa-angle-left"></i></button>
+		    </div>
+		</div>
+	    </div>
+
+	    <div class="container-fluid" id="pcont">
+		<div class="cl-mcont">
+
+		    <div class="stats_bar">
+			<div class="butpro butstyle" data-step="2" data-intro="<strong>Beautiful Elements</strong> <br/> If you are looking for a different UI, this is for you!.">
+			    <div class="sub"><h2>Revendedoras</h2><span id="total_clientes">170</span></div>
+			    <div class="stat"><span class="spk1"><canvas style="display: inline-block; width: 74px; height: 16px; vertical-align: top;" width="74" height="16"></canvas></span></div>
+			</div>
+			<div class="butpro butstyle">
+			    <div class="sub"><h2>Vendas</h2><span>$951,611</span></div>
+			    <div class="stat"><span class="up"> 13,5%</span></div>
+			</div>
+			<div class="butpro butstyle">
+			    <div class="sub"><h2>Devoluções</h2><span>125</span></div>
+			    <div class="stat"><span class="down"> 20,7%</span></div>
+			</div>	
+			<div class="butpro butstyle">
+			    <div class="sub"><h2>Brindes</h2><span>18</span></div>
+			    <div class="stat"><span class="equal"> 0%</span></div>
+			</div>	
+			<div class="butpro butstyle">
+			    <div class="sub"><h2>Despesas</h2><span>3%</span></div>
+			    <div class="stat"><span class="spk2"></span></div>
+			</div>
+			<div class="butpro butstyle">
+			    <div class="sub"><h2>Inadimplentes</h2><span>184</span></div>
+			    <div class="stat"><span class="spk3"></span></div>
+			</div>	
+
+		    </div>
+
+		    <div class="row dash-cols">
+			<div class="col-sm-6 col-md-6 col-lg-4">
+			    <div class="widget-block">
+				<div class="white-box padding">
+				    <div class="row info">
+					<div>
+					    <h3>Metas</h3>
+					</div>
+					<div>
+					    <div id="com_stats" style="height:98px;"></div>
+					</div>
+				    </div>
+				</div>
+			    </div>
+			</div>	
+			<div class="col-sm-6 col-md-6 col-lg-4">
+			    <div class="widget-block">
+				<div class="white-box padding">
+				    <div class="row info text-shadow">
+					<div class="col-xs-12">
+					    <h3>Últimas Despesas</h3>
+					</div>
+					<div class="col-xs-12">
+					    <div id="com2_stats" style="height:98px;"></div>
+					</div>
+				    </div>
+				</div>
+			    </div>
+			</div>	
+			<div class="col-sm-6 col-md-6 col-lg-4">
+			    <div class="widget-block">
+				<div class="white-box">
+				    <div class="fact-data">
+					<div class="epie-chart" data-percent="45"><span>0%</span></div>
+				    </div>
+				    <div class="fact-data no-padding text-shadow">
+					<h3>Desempenho das áreas</h3>
+					<h2>4,522</h2>
+					<p>Desempenho no mês de Agosto.</p>
+				    </div>
+				</div>
+			    </div>
+			</div>
+
+		    </div>
+
+		    <div class="row dash-cols">
+
+			<div class="col-sm-6 col-md-6">
+			    <div class="block">
+				<div class="header no-border">
+				    <h2>Cheques</h2>
+				</div>
+				<div class="content blue-chart"  data-step="3" data-intro="<strong>Unique Styled Plugins</strong> <br/> We put love in every detail to give a great user experience!.">
+				    <div id="site_statistics" style="height:180px;"></div>
+				</div>
+				<div class="content">
+				    <div class="stat-data">
+					<div class="stat-blue">
+					    <h2>140</h2>
+					    <span>Cheques</span>
+					</div>
+				    </div>
+				    <div class="stat-data">
+					<div class="stat-number">
+					    <div><h2>83</h2></div>
+					    <div>Compensados<br /><span>(Agosto)</span></div>
+					</div>
+					<div class="stat-number">
+					    <div><h2>57</h2></div>
+					    <div>Devolvidos<br /><span>(Agosto)</span></div>
+					</div>
+				    </div>
+				    <div class="clear"></div>
+				</div>
+			    </div>
+			</div>	
+
+			<div class="col-sm-6 col-md-6">
+			    <div class="block">
+				<div class="header no-border">
+				    <h2>Fornecedores</h2>
+				</div>
+				<div class="content red-chart">
+				    <div id="site_statistics2" style="height:152px;"></div>
+				</div>
+				<div class="content no-padding">
+				    <table class="red">
+					<thead>
+					    <tr>
+						<th>Nome</th>
+						<th class="right"><span>25%</span>Tanga</th>
+						<th class="right"><span>29%</span>Cueca</th>
+						<th class="right"><span>16%</span>Conjuntos</th>
+					    </tr>
+					</thead>
+					<tbody class="no-border-x">
+					    <tr>
+						<td style="width:40%;"><i class="fa fa-building-o"></i> Schuenck Moda Íntima</td>
+						<td class="text-right">2.568</td>
+						<td class="text-right">5.678</td>
+						<td class="text-right">702</td>
+					    </tr>
+					    <tr>
+						<td><i class="fa fa-building-o"></i> Mimar Lingerie</td>
+						<td class="text-right">1.567</td>
+						<td class="text-right">3.567</td>
+						<td class="text-right">605</td>
+					    </tr>
+					    <tr>
+						<td><i class="fa fa-building-o"></i> Almeida Modas</td>
+						<td class="text-right">1.456</td>
+						<td class="text-right">3.450</td>
+						<td class="text-right">450</td>
+					    </tr>
+					    <tr>
+						<td><i class="fa fa-building-o"></i> Du Castro Confecções</td>
+						<td class="text-right">1.234</td>
+						<td class="text-right">2.567</td>
+						<td class="text-right">402</td>
+					    </tr>
+					</tbody>
+				    </table>
+				</div>
+			    </div>
+			</div>
+		    </div>
+
+		    <div class="row dash-cols">
+			<div class="col-sm-6 col-md-6">
+			    
+			    <div class="tab-content">
+				<div class="tab-pane active cont" id="home">
+				    <h2 class="text-center">Vendas por tipo</h2>
+				    <div id="piec" style="height:300px;margin-top:25px;"></div>
+				</div>
+				<div class="tab-pane cont" id="profile">
+				    <h2>Typography</h2>
+				    <p>Pellentesque ac quam hendrerit, viverra leo eu, <b>dapibus mi</b>. In at luctus massa. Morbi semper nulla eu velit facilisis pellentesque. Mauris adipiscing turpis in bibendum tempus. <i>Donec viverra</i>, lacus ac mollis rhoncus, libero risus placerat nisi, et viverra justo eros eget dui. Mauris convallis et tellus non <a href="#">placerat</a>.</p>
+				    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce gravida est eros, eget porta leo fringilla et. </p>
+				    <a href="#">Read more</a>
+				</div>
+				<div class="tab-pane" id="messages">
+				    <h2 class="hthin">A Lorem Ipsum Story</h2>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a metus pulvinar turpis porttitor imperdiet vel nec justo. Nam id orci purus. Mauris arcu velit, auctor et aliquam quis, rhoncus a velit. Sed laoreet ultrices dolor eget vehicula. Morbi adipiscing euismod nisi, eget tincidunt arcu laoreet at.</p>
+				    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam et tortor ultricies, mollis nunc eget, gravida sapien.</p>
+				</div>
+			    </div>
+			</div>		
+		    </div>
+
+		</div>
+	    </div> 
+
+	</div>
+
+	<!-- The line below must be kept intact for Sencha Cmd to build your application -->
+	<script id="microloader" type="text/javascript" src="bootstrap.js"></script>
+	
+	<!-- jquery -->
+	<script type="text/javascript" src="lib/jquery/jquery.js"></script>
+	<script type="text/javascript" src="lib/jquery/jquery.gritter/js/jquery.gritter.js"></script>
+	<script type="text/javascript" src="lib/jquery/jquery.nanoscroller/jquery.nanoscroller.js"></script>
+	<script type="text/javascript" src="lib/jquery/jquery.ui/jquery-ui.js"></script>
+	<script type="text/javascript" src="lib/jquery/jquery.sparkline/jquery.sparkline.min.js"></script>
+	<script type="text/javascript" src="lib/jquery/jquery.easypiechart/jquery.easy-pie-chart.js"></script>
+	<script type="text/javascript" src="lib/jquery/jquery.nestable/jquery.nestable.js"></script>
+	<script type="text/javascript" src="lib/jquery/bootstrap.switch/bootstrap-switch.min.js"></script>
+	<script type="text/javascript" src="lib/jquery/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="lib/jquery/bootstrap.slider/js/bootstrap-slider.js"></script>
+	<script type="text/javascript" src="lib/jquery/jquery.select2/select2.min.js"></script>
+	<script type="text/javascript" src="lib/jquery/skycons/skycons.js"></script>
+	<script type="text/javascript" src="lib/jquery/intro.js/intro.js"></script>
+	<script type="text/javascript" src="lib/jquery/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="lib/jquery/jquery.flot/jquery.flot.js"></script>
+	<script type="text/javascript" src="lib/jquery/jquery.flot/jquery.flot.pie.js"></script>
+	<script type="text/javascript" src="lib/jquery/jquery.flot/jquery.flot.resize.js"></script>
+	<script type="text/javascript" src="lib/jquery/jquery.flot/jquery.flot.labels.js"></script>
+	<script type="text/javascript" src="lib/keypress/keypress.js"></script>
+	<script type="text/javascript" src="lib/jquery/behaviour/general.js"></script>	
+	
+	<!-- incrudr -->
+	<script type="text/javascript" src="app/view/dashboard/user.js"></script>
+	<script type="text/javascript" src="app/view/dashboard/session.js"></script>
+	<script type="text/javascript" src="app/view/dashboard/menu.js"></script>
+
+    </body>
+</html>

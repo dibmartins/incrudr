@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Incrudr é um framework crud para desenvolvimento rápido de ERPs">
+	<meta name="author" content="Diego Botelho Martins">
+	<link rel="shortcut icon" href="images/favicon.png">
+
+	<title>Incrudr</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" type="text/css" href="../lib/jquery/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="../lib/jquery/jquery.gritter/css/jquery.gritter.css" />
+	<link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4/css/font-awesome.min.css" />
+
+	<!-- Custom styles for this template -->
+	<link href="../css/style.css" rel="stylesheet" />	
+
+    </head>
+
+    <body class="texture">
+
+	<div id="cl-wrapper" class="login-container">
+
+	    <div class="middle-login">
+		<div class="block-flat">
+		    <div class="header">							
+			<h3 class="text-center"><img class="logo-img" src="../images/logo.png" alt="logo"/>Clean Zone</h3>
+		    </div>
+		    <div>
+			<form style="margin-bottom: 0px !important;" class="form-horizontal" id="frm-login" data-parsley-validate>
+			    <div class="content">
+				<h4 class="title">Informe seus dados</h4>
+				<div class="form-group">
+				    <div class="col-sm-12">
+					<div class="input-group">
+					    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+					    <input type="text" placeholder="Login" id="login" maxlength="50" required class="form-control" data-parsley-error-message="Campo obrigatório">
+					</div>
+				    </div>
+				</div>
+				<div class="form-group">
+				    <div class="col-sm-12">
+					<div class="input-group">
+					    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+					    <input type="password" placeholder="Senha" maxlength="30" id="password" required class="form-control">
+					</div>
+				    </div>
+				</div>
+
+			    </div>
+			    <div class="foot">
+				<button id="btn_enter" type="button" class="btn btn-primary" data-dismiss="modal">Entrar</button>
+			    </div>
+			</form>
+		    </div>
+		</div>
+		<div class="text-center out-links"><a href="#">&copy; 2014 Incrudr</a></div>
+	    </div> 
+
+	</div>
+
+	<!-- jquery -->
+	<script type="text/javascript" src="../lib/jquery/jquery.js"></script>
+	<script type="text/javascript" src="../lib/jquery/behaviour/general.js"></script>
+	<script type="text/javascript" src="../lib/jquery/jquery.sha1/jquery.sha1.js"></script>
+	<script type="text/javascript" src="../lib/jquery/jquery.gritter/js/jquery.gritter.js"></script>
+	<script type="text/javascript" src="../lib/jquery/jquery.parsley/parsley.js"></script>
+	<script type="text/javascript" src="../lib/keypress/keypress.js"></script>
+	
+	<!-- incrudr -->
+	<script type="text/javascript" src="../app/view/dashboard/session.js"></script>
+	<script type="text/javascript" src="../app/view/dashboard/login.js"></script>
+	<script type="text/javascript" src="../app/view/dashboard/user.js"></script>
+
+    </body>
+</html>
